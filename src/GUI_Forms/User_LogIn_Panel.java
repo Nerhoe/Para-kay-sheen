@@ -1,6 +1,8 @@
 package GUI_Forms;
 import javax.swing.ButtonGroup;
 import Functions.Log_in;
+import SQL_Conn.DatabaseConnectionInnit;
+
 public class User_LogIn_Panel extends javax.swing.JFrame {
 Log_in log = new Log_in();
    
@@ -9,6 +11,7 @@ Log_in log = new Log_in();
         ButtonGroup bg = new ButtonGroup();
         bg.add(View);
         bg.add(Admin);
+        DatabaseConnectionInnit.dbMake();
     }
 
     /**
